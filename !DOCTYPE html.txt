@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Admission Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f5f9;
+      padding: 30px;
+    }
+    .container {
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #2563eb;
+      color: white;
+      font-size: 16px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1e40af;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>College Admission Form</h2>
+    <form>
+      <!-- Student Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Phone Number -->
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <!-- Gender -->
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select Gender--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Course Selection -->
+      <label for="course">Select Course:</label>
+      <select id="course" name="course" required>
+        <option value="">--Choose a Course--</option>
+        <option value="btech">B.Tech</option>
+        <option value="bca">BCA</option>
+        <option value="bcom">B.Com</option>
+        <option value="ba">B.A</option>
+      </select>
+
+      <!-- Address -->
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" placeholder="Enter your full address"></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
